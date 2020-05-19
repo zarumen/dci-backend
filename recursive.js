@@ -1,17 +1,17 @@
-const readline = require("readline");
-const rl = readline.createInterface({
-    input: process.stdin,
-    output: process.stdout
-});
+// const readline = require("readline");
+// const rl = readline.createInterface({
+//     input: process.stdin,
+//     output: process.stdout
+// });
 
-rl.question("What number do you like? ", function(number) {
-    console.log(`calculated factorial in number of you choose,\nthat's resulted ${factorial(number)}`)
-});
+// rl.question("What number do you like? ", function(number) {
+//     console.log(`calculated factorial in number of you choose,\nthat's resulted ${factorial(number)}`)
+// });
 
-rl.on("close", function() {
-    console.log("\nBYE BYE !!!");
-    process.exit(0);
-});
+// rl.on("close", function() {
+//     console.log("\nBYE BYE !!!");
+//     process.exit(0);
+// });
 
 var f = [];
 function factorial (n) {
@@ -23,4 +23,4 @@ function factorial (n) {
 } 
 var cache = 100;
 //due to memoization following line will cache first 100 elements
-factorial(cache);
+console.log(factorial(cache));
